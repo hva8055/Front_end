@@ -1,73 +1,82 @@
-<DOCTYPE html>
-    <head>
-        <title>HAVC</title>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
         header {
-            background-color: beige;
-
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
         }
         nav {
-            background-color: beige;
-            width: 200px;
-            padding: 20px;
+            background: #444;
+            padding: 10px;
+            text-align: center;
         }
-        article {
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+        .container {
+            display: flex;
             flex: 1;
             padding: 20px;
-            background-color: beige;
         }
-        img {
-            align-items: center;
-            margin-left: 120px;
+        aside {
+            width: 25%;
+            background: #f4f4f4;
+            padding: 15px;
         }
-        .custom-btn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            margin-top: 6px;
-            margin-bottom: 6px;
-            margin-left: 6px;
-            margin-right: 6px;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-            border-radius: 5px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-style: normal;
-        }
-        a {
-            text-decoration: none;
-            color: bisque;
-        }
-        .custom-btn:hover {
-            background-color: #45a049;
+        main {
+            flex: 1;
+            padding: 15px;
         }
         footer {
-            text-align: center;
-            background-color: DarkSalmon;
+            background: #333;
             color: white;
-}
-
+            text-align: center;
+            padding: 15px;
+        }
     </style>
-    <body>
-        <header>
-            <img src="nutrition.jpg" alt="logo" height="180" width="180"/>
-            <h1>Welcome To HAVC</h1>
-            <nav>
-                    <button class="custom-btn"><a href="index.html">Home</a></button>
-                    <button class="custom-btn"><a href="about.html">About</a></button>
-                    <button class="custom-btn"><a href="browse.html">Browse</a></button>
-            </nav>
-        </header>
-        <article>
-            <h2>This is a Model for HAVC</h2>
-            <p>Hello for this a website for nothing for now but in the future it will be some thing</p>
-        </article>
-        <footer>
-            <p>Email</p>
-            <a href="google.com">google</a>
-        </footer>
-
-    </body>
-</DOCTYPE>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="about.html">About</a>
+        <a href="browse.html">Services</a>
+        <a href="index.html">Contact</a>
+    </nav>
+    <div class="container">
+        <aside>
+            <h2>Side Content</h2>
+            <p>This is an aside section where you can place additional information or links.</p>
+        </aside>
+        <main>
+            <h2>Main Content</h2>
+            <p>This is the main content area where your articles or information will be displayed.</p>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
